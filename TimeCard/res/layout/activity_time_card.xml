@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TimeCardActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" 
+        >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textColor="@color/red"
+            android:layout_weight="10"
+            android:gravity="center_vertical|center"
+            android:textSize="15dp"
+            android:background="@color/white"
+            android:text="일" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:background="@color/white"
+            android:text="월" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="10"
+            android:gravity="center_vertical|center"
+            android:textSize="15dp"
+            android:background="@color/white"
+            android:text="화" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="10"
+            android:gravity="center_vertical|center"
+            android:textSize="15dp"
+            android:background="@color/white"
+            android:text="수" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="10"
+            android:gravity="center_vertical|center"
+            android:textSize="15dp"
+            android:background="@color/white"
+            android:text="목" />
+        
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="10"
+            android:gravity="center_vertical|center"
+            android:textSize="15dp"
+            android:background="@color/white"
+            android:text="금" />
+        
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textColor="@color/blue"
+            android:layout_weight="10"
+            android:gravity="center_vertical|center"
+            android:textSize="15dp"
+            android:background="@color/white"
+            android:text="토" />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="-1px"
+        android:verticalSpacing="-1px"
+        android:numColumns="7" 
+        >
+
+    </GridView>
+
+</LinearLayout>

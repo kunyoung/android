@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/time_background"
+    android:orientation="vertical"
+    tools:context=".CalendarActivity" 
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:padding="10dp"
+        >
+
+        <Button
+            android:id="@+id/preDayBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="10"
+            android:background="@drawable/list_selector_background_disabled_light"
+            android:textColor="@color/black"
+            android:text="이전달"/>
+
+        <TextView
+            android:id="@+id/calDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/nextDayBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="10"
+            android:background="@drawable/list_selector_background_disabled_light"
+            android:textColor="@color/black"
+            android:text="다음달" />
+    </LinearLayout>
+    
+		<ImageView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:layout_gravity="bottom"
+		    android:background="@color/guideLine"
+		    />
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingTop="3dp"
+		    android:paddingBottom="3dp"
+		     >
+
+		    <TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textColor="@color/red"
+			    android:layout_weight="3"
+			    android:gravity="center"
+			    android:text="일" />
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			      android:textColor="@color/black"
+			    android:layout_weight="3"
+			    android:gravity="center"
+			    android:text="월" />
+
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			      android:textColor="@color/black"
+			    android:layout_weight="3"
+			    android:gravity="center"
+			    android:text="화" />
+
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			      android:textColor="@color/black"
+			    android:layout_weight="3"
+			    android:gravity="center"
+			    android:text="수" />
+
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			       android:textColor="@color/black"
+			    android:layout_weight="3"
+			    android:gravity="center"
+			    android:text="목" />
+
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			      android:textColor="@color/black"
+			    android:layout_weight="3"
+			    android:gravity="center"
+			    android:text="금" />
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			       android:textColor="@color/blue"
+			    android:layout_weight="3"
+			    android:gravity="center"
+			    android:text="토" />
+
+		</LinearLayout>
+    
+    <GridView
+        android:id="@+id/calGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="-1px"
+        android:numColumns="7"
+        android:verticalSpacing="-1px" 
+        android:layout_marginBottom="0px"
+        >
+
+    </GridView>
+	<ImageView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="3dp"
+		    android:layout_gravity="bottom"
+		    android:background="@color/guideLine"
+		    />
+    <ListView
+        android:id="@+id/workList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/lightgray" 
+        android:dividerHeight="1dp" 
+        android:layout_marginTop="0px"
+        android:background="@color/white"
+         >
+    </ListView>
+
+</LinearLayout>
